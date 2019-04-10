@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<machine xmlns="http://www.hsmworks.com/xml/2009/machine">
+
+  <vendor>Toolbox Bodensee e.V.</vendor>
+
+  <model>Shapeoko</model>
+
+  <description>Toolbox Shapeoko</description>
+
+  <control>GRBL</control>
+
+  <machining additive="no" jet="no" milling="yes" turning="no"/>
+
+  <dimensions depth="600mm" height="500mm" weight="0kg" width="600mm"/>
+
+  <capacities depth="500mm" height="90mm" weight="0kg" width="425mm"/>
+
+  <coolant options=""/>
+
+  <multiAxis adjust="yes" angle="10deg" cone="3deg" linearizationTolerance="0.040000000000000001mm" method="off" tolerance="0.040000000000000001mm"/>
+
+  <tooling maximumToolDiameter="0mm" maximumToolLength="0mm" maximumToolWeight="0kg" numberOfTools="100" toolChanger="no" toolPreload="no"/>
+
+  <machiningTime ratio="1" toolChangeTime="15s"/>
+
+  <home x="0mm" y="0mm" z="0mm"/>
+
+  <capabilities maximumBlockProcessingSpeed="0" maximumFeedrate="0mm/min" workOffsets="100"/>
+
+  <simulation retractOnIndexing="yes" shortestAngularRotation="yes" wcs="0mm 0mm 0mm">
+    <machineAssembly></machineAssembly>
+  </simulation>
+
+  <post>
+    <postProcessor></postProcessor>
+    <postProperties>
+      <Parameters/>
+    </postProperties>
+    <setupSheet></setupSheet>
+    <setupSheetProperties>
+      <Parameters/>
+    </setupSheetProperties>
+  </post>
+
+  <axis actuator="linear" id="X" link="table" maximumFeed="0mm/min" range="0mm 250mm" resolution="0mm"/>
+
+  <axis actuator="linear" id="Y" link="table" maximumFeed="0mm/min" range="0mm 250mm" resolution="0mm"/>
+
+  <axis actuator="linear" id="Z" link="table" maximumFeed="0mm/min" range="0mm 60mm" resolution="0mm"/>
+
+  <spindle axis="0 0 1" maximumPower="0kW" maximumSpeed="0rpm" minimumSpeed="0rpm">
+    <description></description>
+  </spindle>
+
+</machine>
